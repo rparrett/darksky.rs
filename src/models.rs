@@ -117,6 +117,7 @@ pub struct Datablock {
 /// [`Datablock`]: struct.Datablock.html
 /// [`time`]: #structfield.time
 #[derive(Clone, Debug, Deserialize, Serialize)]
+#[serde(rename_all="camelCase")]
 pub struct Datapoint {
     pub apparent_temperature_max_time: Option<u64>,
     pub apparent_temperature_max: Option<f64>,
