@@ -174,6 +174,7 @@ pub struct Datapoint {
 /// [`Unit`]: enum.Unit.html
 /// [DarkSky]: https://darksky.net
 #[derive(Clone, Debug, Deserialize, Serialize)]
+#[serde(rename_all="kebab-case")]
 pub struct Flags {
     /// A list of DarkSky stations used for the [`Forecast`].
     ///
